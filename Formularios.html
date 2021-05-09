@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <h1>Como crear formularios en HTML</h1>
+    <form action="" method="POST" enctype="multipart/form-data">
+         <label for="suNombre">Nombre</label>
+        <input type="text" name="nombre" id="suNombre" size="50" autocomplete="off" autofocus maxlength="10" required> <br> <br>
+
+        <label for="suApellido">Apellido</label>
+        <input type="text" name="nombre" id="suApellido" size="50" autocomplete="off" autofocus maxlength="10" value="Cervantes" readonly> <br> <br>
+       
+        <label for="suDireccion">Direccion</label>
+        <input type="text" name="Direccion" id="suDireccion" size="50" autocomplete="off" autofocus placeholder="Ej.:calle,numero de casa o apt.,ciudad" disabled> <br><br>
+
+        <label for="suEmail">Email</label>
+        <input type="email" name="correo_electronico" id="suEmail" size="50" > <br><br>
+
+        <label for="suContrasena">Contraseña</label>
+        <input type="password" name="contrasena" id="suContrasena" size="50" > <br><br>
+
+        <label for="suDireccionweb">Direccion Web</label>
+        <input type="url" name="direccion_web" id="suDireccionweb" size="50" > <br><br>
+
+        Edad <br>
+        <input type="radio" name="edad_usuario" value="menor18" checked>Menor de 18 años <br>
+        <input type="radio" name="edad_usuario" value="adulto">Entre 18 y 60 años <br>
+        <input type="radio" name="edad_usuario" value="envejeciente">Mayor de 60 años <br>
+
+        Pasatiempos <br>
+        <input type="checkbox" name="Pasatiempos1"value="leer">Lectura<br>
+        <input type="checkbox" name="Pasatiempos2"value="deporte">Hacer deportes<br>
+        <input type="checkbox" name="Pasatiempos3"value="muscia">Escuchar musica<br>
+        <input type="checkbox" name="Pasatiempos4"value="otros" checked>Otros<br><br>
+
+        Cantidad <input type="number" name="Cantidad" value="1" step="3"> <br> <br>
+
+        <label for="">Fecha de nacimiento</label>
+        <input type="date" name="fecha_nacimiento" id="fecha" size="50">
+
+        Define un rango: <input type="range" name="rango" size="50"> <br><br>
+
+        Adjuntar archivo: <input type="file" name="archivo[]" multiple> <br><br>
+
+        Buscar: <input type="search" name="buscador" placeholder="Buscar..."> <br><br>
+
+        Pais: <br>
+        <select name="pais[]" multiple>
+        <option value="argentina">Argentina</option>
+        <option value="chile" selected>Chile</option>
+        <option value="colombia">Colombia</option>
+        <option value="estados_unidos">Estados Unidos</option>
+        <option value="mexico">Mexico</option>
+        <option value="panama">Panama</option>
+        <option value="republica_dominicana">Republica Dominicana</option>
+        </select>
+        <br><br>
+        Comentarios <br>
+        <textarea name="mensaje" rows="10" cols="30"></textarea> <br><br>
+
+        <!-- Boton para enviar datos -->
+        <input type="submit" name="enviar_datos" value="Enviar formulario">
+
+        <!-- Boton para resetar campos-->
+
+        <input type="reset" name="limpiar_campos" value="Resetear formulario">
+
+        <!--Boton generico-->
+
+        <input type="button" name="boton_generico" value="Pulsar aqui">
+
+        <button type="button">Esto es un <b>boton</b></button>
+    </form>
+</body>
+</html>
